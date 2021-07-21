@@ -1,6 +1,6 @@
----
+***
 
-- This is a fork (really a degit) of Mina Markham's excellent macOS setup script, Formation.
+- This is a fork (really a [degit](https://github.com/Rich-Harris/degit)) of Mina Markham's excellent macOS setup script, [Formation](https://github.com/minamarkham/formation).
 - Details below on what's installed are not up-to-date. See the `swag` folder for what's actually installed.
 - `slay` is the runtime (is that the right word?), `twirl` contains all the functions for the script.
 - Assets:
@@ -8,14 +8,16 @@
     - `casks` are Mac apps installed by Homebrew. (Casks prefixed with '#' are ignored. Search for apps on [brew.sh](brew.sh))
     - `brews` are cli tools installed by Homebrew
     - `npm` are Node packages installed by npm
-- Heads up: `brew install --cask` fails if a cask app was already install without using brew. 
-- In addition to apps, this script sets some system preferences.
+- Heads up: `brew install --cask` fails if a cask app was already installed without using brew. 
+- In addition to apps, this script...
+    - Sets some system preferences. See the 'CONFIGURE: System & Safari Preferences' section in `slay`.
+    - Gives the option of downloading Apple's UI fonts SF Pro, SF Compact, and SF Mono.
 - The script can be run using `bash setup.sh`.
- 
-Mihira Jayasekera
+
+Mihira Jayasekera\
 July 21, 2021
 
----
+***
 
 # 🐝 Formation <a href="https://www.patreon.com/minamarkham"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="100"></a>
 
