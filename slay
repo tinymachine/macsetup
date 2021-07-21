@@ -203,14 +203,21 @@ chapter "Setting System Preferences"
 defaults write com.apple.touchbar.agent PresentationModeGlobal -string "functionKeys"
 print_success_muted "Touch Bar shows F1, F2, etc."
 
+defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
+print_success_muted "Switch between light and dark mode automatically."
+
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+print_success_muted "Trackpad: tap to click"
+
 defaults -currentHost write -g AppleFontSmoothing -int 0
 print_success_muted "Disable font smoothing (restart required)"
 
 defaults write com.apple.dock orientation -string "right"
-print_success_muted "Position Dock on right"
+print_success_muted "Dock: position on right"
 
 defaults write com.apple.dock autohide -bool true
-print_success_muted "Hide Dock by default"
+print_success_muted "Dock: hide by default"
 
 defaults write "Apple Global Domain" NSQuitAlwaysKeepsWindows -bool true
 print_success_muted "Restore windows when quitting and re-opening an app"
