@@ -3,11 +3,15 @@
 - This is a fork (really a degit) of Mina Markham's excellent macOS setup script, Formation.
 - Details below on what's installed are not up-to-date. See the `swag` folder for what's actually installed.
 - `slay` is the runtime (is that the right word?), `twirl` contains all the functions for the script.
-- Casks prefixed with '#' are ignored.
-- Note: `brew install --cask` fails if a cask app was already install without using brew. 
-- In addition to apps, this script sets some system preferences as well.
+- Assets:
+    - `apps` are Mac App Store apps installed by the `mas` CLI. (The numbers are IDs you can find in the Share links for apps in the App Store. The app names are just for use by this script and should not contain spaces.)
+    - `casks` are Mac apps installed by Homebrew. (Casks prefixed with '#' are ignored. Search for apps on [brew.sh](brew.sh))
+    - `brews` are cli tools installed by Homebrew
+    - `npm` are Node packages installed by npm
+- Heads up: `brew install --cask` fails if a cask app was already install without using brew. 
+- In addition to apps, this script sets some system preferences.
 - The script can be run using `bash setup.sh`.
-
+ 
 Mihira Jayasekera
 July 21, 2021
 
