@@ -3,6 +3,7 @@
 - This is a fork (really a [degit](https://github.com/Rich-Harris/degit)) of Mina Markham's excellent macOS setup script, [Formation](https://github.com/minamarkham/formation).
 - Details below on what's installed are not up-to-date. See the `swag` folder for what's actually installed.
 - `slay` is the runtime (is that the right word?), `twirl` contains all the functions for the script.
+- `slay` installs Homebrew if it's not already installed.
 - Assets:
     - `apps` are Mac App Store apps installed by the `mas` CLI. (The numbers are IDs you can find in the Share links for apps in the App Store. The app names are just for use by this script and should not contain spaces.)
     - `casks` are Mac apps installed by Homebrew. (Casks prefixed with '#' are ignored. Search for apps on [brew.sh](brew.sh))
